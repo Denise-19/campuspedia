@@ -13,7 +13,7 @@ use App\Http\Controllers\PegawaiController;
 |
 */
 
-// Route::get('/', 'PegawaiController@index');
+Route::get('/', 'PegawaiController@index');
 
 
 Route::resource('pegawai', 'PegawaiController');
