@@ -15,6 +15,7 @@ use App\Http\Controllers\PegawaiController;
 
 // Route::get('/', 'PegawaiController@index');
 
-// Route::get('/pegawai/cetak_pdf/{id}', [PegawaiController::class, 'cetak_pdf']);
+
 Route::resource('pegawai', 'PegawaiController');
 Route::get('/pegawai/{id}/cetak_pdf', [PegawaiController::class, 'cetak_pdf']);
+// Route::get('/pegawai/cetak_allpdf', 'PegawaiController@cetak_allpdf');

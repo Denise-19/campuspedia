@@ -1,6 +1,6 @@
 @extends('pegawai.master')
 @section('content')
-<center><a href="/pegawai/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a></center><br>	<br>	
+{{-- <center><a href="/pegawai/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a></center><br>	<br>	 --}}
     <a href="/pegawai/create" class="btn btn-primary mb-3">Tambah</a>
             <table class="table">
                 <thead class="thead-light">
