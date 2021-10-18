@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PegawaiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/pegawai', 'PegawaiController@index');
-Route::get('/pegawai/cetak_pdf', 'PegawaiController@cetak_pdf');
+// Route::get('/', 'PegawaiController@index');
+
+// Route::get('/pegawai/cetak_pdf/{id}', [PegawaiController::class, 'cetak_pdf']);
+Route::resource('pegawai', 'PegawaiController');
+Route::get('/pegawai/{id}/cetak_pdf', [PegawaiController::class, 'cetak_pdf']);

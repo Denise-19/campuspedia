@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,7 +169,7 @@
           <img src="{{asset('image/admin.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Denise Gratia Aruan</a>
         </div>
       </div>
 
@@ -192,33 +191,20 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/pegawai" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
+                Data Pegawai
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/pegawai" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Data Surat Masuk
+              </p>
+            </a>
           </li>
           
         </ul>
@@ -247,40 +233,8 @@
       </div><!-- /.container-fluid -->
     </section>
     <section class="content">
-	<div class="container">
-		<center>
-			<h4>Pegawai Campuspedia</h4>
-		</center>
-		<br/>
-		<a href="/pegawai/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a>
-		<table class='table table-bordered'>
-			<thead>
-				<tr>
-					<th>No</th>
-					<th>Nama</th>
-					<th>Email</th>
-					<th>Alamat</th>
-					<th>Telepon</th>
-					<th>Pekerjaan</th>
-				</tr>
-			</thead>
-			<tbody>
-				@php $i=1 @endphp
-				@foreach($pegawai as $p)
-				<tr>
-					<td>{{ $i++ }}</td>
-					<td>{{$p->nama}}</td>
-					<td>{{$p->email}}</td>
-					<td>{{$p->alamat}}</td>
-					<td>{{$p->telepon}}</td>
-					<td>{{$p->pekerjaan}}</td>
-				</tr>
-				@endforeach
-			</tbody>
-		</table>
- 
-	</div>
-</section>
+        @yield('content')
+    </section>
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
@@ -289,7 +243,7 @@
 <div class="float-right d-none d-sm-block">
   <b>Version</b> 3.1.0
 </div>
-<strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+<strong>Denise Gratia Aruan &copy; 2021.</strong> All rights reserved.
 </footer>
 
 <!-- Control Sidebar -->
